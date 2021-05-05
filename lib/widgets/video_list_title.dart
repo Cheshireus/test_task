@@ -14,9 +14,9 @@ class VideoListTitle extends StatelessWidget {
   final TextStyle? dataTimeTextStyle;
   final void Function() onTapPlayPause;
   static const _defaultPadding = EdgeInsets.only(right: 7, top: 10, bottom: 10);
-  static const _titleTextStyle = kTextStyle.kVideoListTitleTextStyle;
-  static const _subTittleTextStyle = kTextStyle.kVideoSubtitleTextStyle;
-  static const _dataTimeTextStyle = kTextStyle.kVideoSubtitleTime;
+  static const _titleTextStyle = kTextStyle.videoListTitle;
+  static const _subTittleTextStyle = kTextStyle.videoSubtitle;
+  static const _dataTimeTextStyle = kTextStyle.videoSubtitleTime;
 
   const VideoListTitle({
     Key? key,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gradient_widgets/gradient_widgets.dart';
 import 'package:test_task/resources/const_string.dart';
 import 'package:test_task/resources/example_date.dart';
 import 'package:test_task/resources/images_path.dart';
@@ -117,7 +116,7 @@ Widget buildNisBloc(BuildContext context) {
       children: [
         Text(
           kStringOrderSummary.total,
-          style: kTextStyle.montserra13Blue,
+          style: kTextStyle.montserrat13Blue,
         ),
         Text(
           exampleCountNis.count.toString() + kStringOrderSummary.nis,

@@ -37,16 +37,16 @@ class kTextStyle {
     color: const Color(0xff0f0f0f),
     fontWeight: FontWeight.w700,
   );
-  static const kVideoListTitleTextStyle = TextStyle(
+  static const videoListTitle = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 14,
   );
-  static const kVideoSubtitleTextStyle = TextStyle(
+  static const videoSubtitle = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 10,
     color: Color(0xffa5a4af),
   );
-  static const kVideoSubtitleTime = TextStyle(
+  static const videoSubtitleTime = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 10,
     color: const Color(0xff1a1a1a),
@@ -81,7 +81,7 @@ class kTextStyle {
     color: const Color(0xff0f0f0f),
     fontWeight: FontWeight.w700,
   );
-  static const montserra13Blue = TextStyle(
+  static const montserrat13Blue = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 13,
     color: const Color(0xff168fcf),
