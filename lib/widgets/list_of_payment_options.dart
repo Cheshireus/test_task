@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:test_task/resources/icons_path.dart';
+import 'package:test_task/resources/images_path.dart';
 import 'package:test_task/resources/theme.dart';
 import 'package:test_task/util.dart';
 import 'package:test_task/widgets/paymen_list_title.dart';
+import 'package:test_task/resources/const_screens_date.dart';
 
 class ListPaymentOptions extends StatefulWidget {
   final List<String> listCreditCart; //список кредитных карт
@@ -27,7 +30,7 @@ class _ListPaymentOptionsState extends State<ListPaymentOptions> {
       children: [
         PaymentListTitle(
           isChek: value == widget.listCreditCart.length ? true : false,
-          leading: Image.asset('assets/images/wallet.png', width: 30),
+          leading: Image.asset(kIconsPath.wallet, width: 30),
           onTap: () {
             setState(() {
               value = widget.listCreditCart.length;
@@ -36,22 +39,25 @@ class _ListPaymentOptionsState extends State<ListPaymentOptions> {
           },
           title: RichText(
             text: TextSpan(
-              text: 'Use money from my wallet ',
+              text: kCartScreenData.WalletOnis1,
               style: kTextStyle.montserratRegular14Black,
               children: [
-                TextSpan(text: '0NIS', style: kTextStyle.montserratRegular14),
+                TextSpan(
+                    text: kCartScreenData.WalletOnis2,
+                    style: kTextStyle.montserratRegular14),
               ],
             ),
           ),
         ),
         PaymentListTitle(
+          backgroundColor: kColors.white,
           isChek: false,
           leading: InkWell(
             child: Icon(Icons.add_circle_outline),
             onTap: widget.onTapAddCreditCart,
           ),
           title: Text(
-            'Add credit card',
+            kCartScreenData.addCard,
             style: kTextStyle.montserratRegular14Black,
           ),
         ),
@@ -60,7 +66,7 @@ class _ListPaymentOptionsState extends State<ListPaymentOptions> {
           (index) => PaymentListTitle(
             isChek: value == index,
             leading: Image.asset(
-              'assets/images/master_card_image.png',
+              kImagesPath.masterCard,
               width: 30,
             ),
             onTap: () {

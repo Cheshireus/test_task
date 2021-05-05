@@ -37,7 +37,7 @@ class CartScreen extends StatelessWidget {
             GradientButtonWrapper(
               onTap: () {
                 //todo tap check out
-                print('todo tap check out');
+                print('tap check out');
               },
               title: kCartScreenData.buttonCheckOut,
             ),

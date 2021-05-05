@@ -19,15 +19,21 @@ Widget buildHistoryList(BuildContext context) {
           child: ListView.builder(
             shrinkWrap: true,
             itemBuilder: (context, i) => Container(
-              margin: kPadding.StandardRight,
+              margin: kPadding.standardRight,
               color: i % 2 != 0 ? kColors.lightGray : kColors.white,
               child: HistoryListTitle(
                 title: exampleListHistoryData.list[i].title,
                 date: exampleListHistoryData.list[i].date,
                 listTime: exampleListHistoryData.list[i].listTime,
                 subtitle: exampleListHistoryData.list[i].subtitle,
-                callBackButtonEdit: () {},
-                callBackButtonTrash: () {},
+                callBackButtonEdit: () {
+                  //todo callback on tap edit history list
+                  print("callback on tap edit history list $i");
+                },
+                callBackButtonTrash: () {
+                  //todo callback ont tap trash History List
+                  print("callback on tap edit history list $i");
+                },
               ),
             ),
             itemCount: exampleListHistoryData.list.length,

@@ -25,7 +25,7 @@ class GradientButtonWrapper extends StatelessWidget {
       increaseWidthBy: increaseWidthBy,
       textStyle: textStyle ?? kTextStyle.button,
       child: Text(title),
-      callback: () {},
+      callback: onTap,
       gradient: gradient ?? kGradient.buttonGradient,
     );
   }

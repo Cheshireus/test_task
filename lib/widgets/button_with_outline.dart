@@ -12,9 +12,9 @@ class ButtonWithOutline extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: onTap,
       child: Text(
-        "Edit",
+        title,
         style: kTextStyle.button.copyWith(color: kColors.gray),
       ),
       style: ButtonStyle(

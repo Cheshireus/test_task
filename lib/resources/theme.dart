@@ -13,9 +13,10 @@ class kColors {
 
 // ignore: camel_case_types
 class kPadding {
-  static const EdgeInsets StandardRight = EdgeInsets.only(right: 8);
+  static const EdgeInsets standardRight = EdgeInsets.only(right: 8);
   static const EdgeInsets standardHorizontal =
       EdgeInsets.symmetric(horizontal: 20);
+  static const EdgeInsets standardleft = EdgeInsets.only(left: 13);
 }
 
 // ignore: camel_case_types
