@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:test_task/resources/example_date.dart';
 import 'package:test_task/resources/theme.dart';
-import 'package:test_task/util.dart';
 import 'package:test_task/widgets/history_list_title.dart';
+import 'package:test_task/resources/const_screens_date.dart';
 
 Widget buildHistoryList(BuildContext context) {
   return Column(
@@ -9,7 +10,7 @@ Widget buildHistoryList(BuildContext context) {
     children: [
       Padding(
         padding: kPadding.standardHorizontal,
-        child: Text('My Selected screens', style: kTextStyle.appBarTitle),
+        child: Text(kCartScreenData.title, style: kTextStyle.appBarTitle),
       ),
       Container(
         constraints: BoxConstraints(maxHeight: 500),
@@ -21,16 +22,15 @@ Widget buildHistoryList(BuildContext context) {
               margin: kPadding.StandardRight,
               color: i % 2 != 0 ? kColors.lightGray : kColors.white,
               child: HistoryListTitle(
-                title: "Mifgash Moshe",
-                date: DateTime.now(),
-                listTime: List.generate(
-                    i + 1, (index) => parseTime('${8 + index}:00')),
-                subtitle: '0NIS',
+                title: exampleListHistoryData.list[i].title,
+                date: exampleListHistoryData.list[i].date,
+                listTime: exampleListHistoryData.list[i].listTime,
+                subtitle: exampleListHistoryData.list[i].subtitle,
                 callBackButtonEdit: () {},
                 callBackButtonTrash: () {},
               ),
             ),
-            itemCount: 3,
+            itemCount: exampleListHistoryData.list.length,
           ),
         ),
       ),

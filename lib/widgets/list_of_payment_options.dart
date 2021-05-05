@@ -3,11 +3,11 @@ import 'package:test_task/resources/theme.dart';
 import 'package:test_task/util.dart';
 import 'package:test_task/widgets/paymen_list_title.dart';
 
-class ListOfPaymentOptions extends StatefulWidget {
+class ListPaymentOptions extends StatefulWidget {
   final List<String> listCreditCart; //список кредитных карт
   final Function() onTapAddCreditCart;
   final Function(int index) callbackChoicePaymentMethod;
-  const ListOfPaymentOptions(
+  const ListPaymentOptions(
       {Key? key,
       required this.listCreditCart,
       required this.onTapAddCreditCart,
@@ -15,10 +15,10 @@ class ListOfPaymentOptions extends StatefulWidget {
       : super(key: key);
 
   @override
-  _ListOfPaymentOptionsState createState() => _ListOfPaymentOptionsState();
+  _ListPaymentOptionsState createState() => _ListPaymentOptionsState();
 }
 
-class _ListOfPaymentOptionsState extends State<ListOfPaymentOptions> {
+class _ListPaymentOptionsState extends State<ListPaymentOptions> {
   int value = 0;
   @override
   Widget build(BuildContext context) {

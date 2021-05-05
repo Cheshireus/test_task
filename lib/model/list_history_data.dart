@@ -12,7 +12,7 @@ class HistoryCardDate {
   });
 }
 
-class HistoryListData {
+class ListHistoryData {
   List<HistoryCardDate> list;
-  HistoryListData(this.list);
+  ListHistoryData(this.list);
 }

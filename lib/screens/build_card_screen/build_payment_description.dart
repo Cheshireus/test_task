@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_task/resources/theme.dart';
+import 'package:test_task/resources/const_screens_date.dart';
+import 'package:test_task/resources/example_date.dart';
 
 Padding buildPaymentDescription(BuildContext context) {
   return Padding(
@@ -8,11 +10,12 @@ Padding buildPaymentDescription(BuildContext context) {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "200 NIS".toUpperCase(),
+          (exampleCountNis.count.toString() + kCartScreenData.nis)
+              .toUpperCase(),
           style: kTextStyle.montserratRegular20black,
         ),
         Text(
-          "The payment will be proceed after \n screen owner approval",
+          kCartScreenData.descriptionNis,
           style: kTextStyle.montserratRegular14,
         ),
       ],
