@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_task/resources/example_date.dart';
-import 'package:test_task/resources/theme.dart';
+import 'package:test_task/resources/thems.dart';
 import 'package:test_task/widgets/history_list_title.dart';
 import 'package:test_task/resources/const_screens_date.dart';
 

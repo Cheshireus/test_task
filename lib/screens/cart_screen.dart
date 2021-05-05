@@ -6,7 +6,7 @@ import 'build_card_screen/build_history_list.dart';
 import 'build_card_screen/build_list_payment_options.dart';
 import 'build_card_screen/build_payment_description.dart';
 import 'build_card_screen/build_video_list_title.dart';
-import 'package:test_task/resources/theme.dart';
+import 'package:test_task/resources/thems.dart';
 import 'package:test_task/resources/const_screens_date.dart';
 
 class CartScreen extends StatelessWidget {
@@ -14,7 +14,7 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size.width;
+    // final size = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: buildAppBar(context),
       body: SingleChildScrollView(
@@ -34,12 +34,15 @@ class CartScreen extends StatelessWidget {
               ),
             ),
             buildListPaymentOptions(context),
-            GradientButtonWrapper(
-              onTap: () {
-                //todo tap check out
-                print('tap check out');
-              },
-              title: kCartScreenData.buttonCheckOut,
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: GradientButtonWrapper(
+                onTap: () {
+                  //todo tap check out
+                  print('tap check out');
+                },
+                title: kCartScreenData.buttonCheckOut,
+              ),
             ),
           ],
         ),

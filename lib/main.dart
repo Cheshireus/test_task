@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:test_task/screens/cart_screen.dart';
-import 'resources/theme.dart';
+import 'package:test_task/screens/order_summary.dart';
+import 'resources/thems.dart';
 
 main() {
   runApp(MyApp());
@@ -22,8 +23,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         CartScreen.id: (context) => CartScreen(),
+        OrderSummary.id: (context) => OrderSummary(),
       },
-      initialRoute: CartScreen.id,
+      initialRoute: OrderSummary.id,
     );
   }
 }

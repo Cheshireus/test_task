@@ -14,6 +14,11 @@ class kCartScreenData {
 }
 
 // ignore: camel_case_types
+class kOrderSummaryData {
+  static const appBarTitle = "Order summary";
+}
+
+// ignore: camel_case_types
 class kWidgetsDate {
   static const ButtonEdit = 'Edit';
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_task/resources/theme.dart';
+import 'package:test_task/resources/thems.dart';
 import 'package:test_task/widgets/custom_button_with_circle.dart';
 
 class PaymentListTitle extends StatelessWidget {

@@ -3,7 +3,7 @@ import 'package:test_task/resources/const_screens_date.dart';
 import 'package:test_task/resources/icons_path.dart';
 import 'package:test_task/util.dart';
 import 'package:test_task/widgets/button_with_outline.dart';
-import 'package:test_task/resources/theme.dart';
+import 'package:test_task/resources/thems.dart';
 
 class HistoryListTitle extends StatelessWidget {
   final String title;

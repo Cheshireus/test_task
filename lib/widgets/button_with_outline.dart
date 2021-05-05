@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_task/resources/theme.dart';
+import 'package:test_task/resources/thems.dart';
 
 class ButtonWithOutline extends StatelessWidget {
   final String title;

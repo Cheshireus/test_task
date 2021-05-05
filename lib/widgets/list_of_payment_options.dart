@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_task/resources/icons_path.dart';
 import 'package:test_task/resources/images_path.dart';
-import 'package:test_task/resources/theme.dart';
+import 'package:test_task/resources/thems.dart';
 import 'package:test_task/util.dart';
 import 'package:test_task/widgets/paymen_list_title.dart';
 import 'package:test_task/resources/const_screens_date.dart';

@@ -4,7 +4,6 @@ import 'package:test_task/model/list_history_data.dart';
 import 'package:test_task/model/video_datа.dart';
 import 'package:test_task/resources/images_path.dart';
 import 'package:test_task/util.dart';
-import 'package:test_task/widgets/history_list_title.dart';
 
 var exampleVideoDate = VideoDate(
   description: "Description Lorem ipsum fufb haonr s djkdh jaunr",
