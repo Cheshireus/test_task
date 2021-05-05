@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:test_task/resources/const_screens_date.dart';
+import 'package:test_task/resources/const_string.dart';
 import 'package:test_task/resources/icons_path.dart';
 import 'package:test_task/util.dart';
 import 'package:test_task/widgets/button_with_outline.dart';
-import 'package:test_task/resources/thems.dart';
+import 'package:test_task/resources/theme.dart';
 
 class HistoryListTitle extends StatelessWidget {
   final String title;
@@ -84,7 +84,7 @@ class HistoryListTitle extends StatelessWidget {
                   Visibility(
                     visible: callBackButtonEdit != null,
                     child: ButtonWithOutline(
-                      title: kCartScreenData.buttonEdit,
+                      title: kStringCart.buttonEdit,
                       onTap: callBackButtonEdit ?? () {},
                     ),
                   ),

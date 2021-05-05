@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:test_task/screens/cart_screen.dart';
 import 'package:test_task/screens/order_summary.dart';
-import 'resources/thems.dart';
+import 'resources/theme.dart';
 
 main() {
   runApp(MyApp());

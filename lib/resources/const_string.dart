@@ -1,5 +1,5 @@
 // ignore: camel_case_types
-class kCartScreenData {
+class kStringCart {
   static const appBarTitle = 'Cart';
   static const title = "My Selected screens";
   static const nis = " NIS";
@@ -14,8 +14,13 @@ class kCartScreenData {
 }
 
 // ignore: camel_case_types
-class kOrderSummaryData {
+class kStringOrderSummary {
   static const appBarTitle = "Order summary";
+  static const title = "*loop name* was posted";
+  static const total = "Total";
+  static const gradientButton = "Go to my profile";
+  static const outlineButton = "Back to screens";
+  static const nis = "NIS";
 }
 
 // ignore: camel_case_types

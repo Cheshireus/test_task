@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:test_task/resources/thems.dart';
+import 'package:test_task/resources/theme.dart';
 
 class VideoListTitle extends StatelessWidget {
   final ImageProvider leadingImage;

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:test_task/resources/example_date.dart';
-import 'package:test_task/resources/thems.dart';
+import 'package:test_task/resources/theme.dart';
 import 'package:test_task/widgets/history_list_title.dart';
-import 'package:test_task/resources/const_screens_date.dart';
+import 'package:test_task/resources/const_string.dart';
 
 Widget buildHistoryList(BuildContext context) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       Padding(
-        padding: kPadding.standardHorizontal,
-        child: Text(kCartScreenData.title, style: kTextStyle.appBarTitle),
+        padding: kPadding.standardHorizontal.copyWith(top: 12, bottom: 14),
+        child: Text(kStringCart.title, style: kTextStyle.appBarTitle),
       ),
       Container(
         constraints: BoxConstraints(maxHeight: 500),

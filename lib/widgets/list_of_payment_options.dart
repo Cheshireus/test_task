@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:test_task/resources/icons_path.dart';
 import 'package:test_task/resources/images_path.dart';
-import 'package:test_task/resources/thems.dart';
+import 'package:test_task/resources/theme.dart';
 import 'package:test_task/util.dart';
 import 'package:test_task/widgets/paymen_list_title.dart';
-import 'package:test_task/resources/const_screens_date.dart';
+import 'package:test_task/resources/const_string.dart';
 
 class ListPaymentOptions extends StatefulWidget {
   final List<String> listCreditCart; //список кредитных карт
@@ -39,11 +39,11 @@ class _ListPaymentOptionsState extends State<ListPaymentOptions> {
           },
           title: RichText(
             text: TextSpan(
-              text: kCartScreenData.WalletOnis1,
+              text: kStringCart.WalletOnis1,
               style: kTextStyle.montserratRegular14Black,
               children: [
                 TextSpan(
-                    text: kCartScreenData.WalletOnis2,
+                    text: kStringCart.WalletOnis2,
                     style: kTextStyle.montserratRegular14),
               ],
             ),
@@ -57,7 +57,7 @@ class _ListPaymentOptionsState extends State<ListPaymentOptions> {
             onTap: widget.onTapAddCreditCart,
           ),
           title: Text(
-            kCartScreenData.addCard,
+            kStringCart.addCard,
             style: kTextStyle.montserratRegular14Black,
           ),
         ),

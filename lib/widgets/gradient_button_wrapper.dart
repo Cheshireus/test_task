@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gradient_widgets/gradient_widgets.dart';
-import 'package:test_task/resources/thems.dart';
+import 'package:test_task/resources/theme.dart';
 
 class GradientButtonWrapper extends StatelessWidget {
   final String title;

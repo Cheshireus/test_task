@@ -31,54 +31,59 @@ class kGradient {
 
 // ignore: camel_case_types
 class kTextStyle {
-  static const TextStyle appBarTitle = TextStyle(
+  static const appBarTitle = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 20,
     color: const Color(0xff0f0f0f),
     fontWeight: FontWeight.w700,
   );
-  static const TextStyle kVideoListTitleTextStyle = TextStyle(
+  static const kVideoListTitleTextStyle = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 14,
   );
-  static const TextStyle kVideoSubtitleTextStyle = TextStyle(
+  static const kVideoSubtitleTextStyle = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 10,
     color: Color(0xffa5a4af),
   );
-  static const TextStyle kVideoSubtitleTime = TextStyle(
+  static const kVideoSubtitleTime = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 10,
     color: const Color(0xff1a1a1a),
   );
-  static const TextStyle montserratRegular20black = TextStyle(
+  static const montserratRegular20black = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 20,
     color: const Color(0xff000000),
   );
-  static const TextStyle montserratRegular14 = TextStyle(
+  static const montserratRegular14 = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 14,
     color: const Color(0xffa5a4af),
     height: 1.4285714285714286,
   );
 
-  static const TextStyle montserratRegular14Black = TextStyle(
+  static const montserratRegular14Black = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 14,
     color: const Color(0xff0f0f0f),
     height: 1.4285714285714286,
   );
-  static const TextStyle button = TextStyle(
+  static const button = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 13,
     color: const Color(0xffffffff),
     fontWeight: FontWeight.w600,
   );
-  static const TextStyle TitleBold = TextStyle(
+  static const TitleBold = TextStyle(
     fontFamily: 'Montserrat',
     fontSize: 14,
     color: const Color(0xff0f0f0f),
     fontWeight: FontWeight.w700,
+  );
+  static const montserra13Blue = TextStyle(
+    fontFamily: 'Montserrat',
+    fontSize: 13,
+    color: const Color(0xff168fcf),
   );
 }
