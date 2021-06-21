@@ -8,53 +8,55 @@ import 'package:test_task/screens/cart_screen.dart';
 import 'package:test_task/widgets/button_with_outline.dart';
 import 'package:test_task/widgets/gradient_button_wrapper.dart';
 import 'package:test_task/widgets/history_list_title.dart';
-import 'package:test_task/widgets/wrapperDivider.dart';
+import 'package:test_task/widgets/wrapper_divider.dart';
 
 class OrderSummary extends StatelessWidget {
   const OrderSummary({Key? key}) : super(key: key);
   static const id = "OrderSummary";
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: buildAppBar(context),
-        body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              buildVideoListTitle(context),
-              Padding(
-                padding:
-                    kPadding.standardHorizontal.copyWith(top: 12, bottom: 14),
-                child: Text(
-                  kStringOrderSummary.title,
-                  style: kTextStyle.appBarTitle,
+    return Container(
+      color: kColors.white,
+      child: SafeArea(
+        child: Scaffold(
+          appBar: buildAppBar(context),
+          body: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                buildVideoListTitle(context),
+                Padding(
+                  padding: kPadding.standardHorizontal.copyWith(top: 12, bottom: 14),
+                  child: Text(
+                    kStringOrderSummary.title,
+                    style: kTextStyle.appBarTitle,
+                  ),
                 ),
-              ),
-              buildHistoryList(context),
-              WrapperDivider(),
-              buildNisBloc(context),
-              SizedBox(
-                height: 20,
-              ),
-              GradientButtonWrapper(
-                title: kStringOrderSummary.gradientButton,
-                onTap: () {
-                  //todo on tap go my profile
-                  print("todo on tap go my profile");
-                },
-              ),
-              ButtonWithOutline(
-                title: kStringOrderSummary.outlineButton,
-                onTap: () {
-                  //todo on tap outline button
-                  print("on tap outline button");
-                },
-              ),
-              SizedBox(
-                height: 30,
-              )
-            ],
+                buildHistoryList(context),
+                WrapperDivider(),
+                buildNisBloc(context),
+                SizedBox(
+                  height: 20,
+                ),
+                GradientButtonWrapper(
+                  title: kStringOrderSummary.gradientButton,
+                  onTap: () {
+                    //todo on tap go my profile
+                    print("todo on tap go my profile");
+                  },
+                ),
+                ButtonWithOutline(
+                  title: kStringOrderSummary.outlineButton,
+                  onTap: () {
+                    //todo on tap outline button
+                    print("on tap outline button");
+                  },
+                ),
+                SizedBox(
+                  height: 30,
+                )
+              ],
+            ),
           ),
         ),
       ),
