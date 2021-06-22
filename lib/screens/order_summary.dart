@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_task/generated/l10n.dart';
 import 'package:test_task/resources/const_string.dart';
 import 'package:test_task/resources/example_date.dart';
 import 'package:test_task/resources/images_path.dart';
@@ -62,24 +63,6 @@ class OrderSummary extends StatelessWidget {
       ),
     );
   }
-
-  AppBar buildAppBar(BuildContext context) {
-    return AppBar(
-      elevation: 0,
-      leading: IconButton(
-        icon: Image.asset(kImagesPath.home),
-        onPressed: () {
-          Navigator.pushNamed(context, CartScreen.id);
-          //todo ontap home
-        },
-      ),
-      title: Text(
-        kStringOrderSummary.appBarTitle,
-        style: kTextStyle.appBarTitle,
-      ),
-      centerTitle: true,
-    );
-  }
 }
 
 Widget buildHistoryList(BuildContext context) {
@@ -126,5 +109,23 @@ Widget buildNisBloc(BuildContext context) {
         ),
       ],
     ),
+  );
+}
+
+AppBar buildAppBar(BuildContext context) {
+  return AppBar(
+    elevation: 0,
+    leading: IconButton(
+      icon: Image.asset(kImagesPath.home),
+      onPressed: () {
+        Navigator.pushNamed(context, CartScreen.id);
+        //todo ontap home
+      },
+    ),
+    title: Text(
+      S.of(context).orderSummary,
+      style: kTextStyle.appBarTitle,
+    ),
+    centerTitle: true,
   );
 }

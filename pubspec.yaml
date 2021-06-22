@@ -18,6 +18,8 @@ dependencies:
   intl: ^0.17.0
   ionicons: ^0.1.2
   gradient_widgets: ^0.6.0
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
@@ -35,3 +37,5 @@ flutter:
         - asset: assets/fonts/Montserrat-Bold.ttf
           weight: 700
         - asset: assets/fonts/Montserrat-SemiBold.ttf
+flutter_intl:
+  enabled: true

@@ -1,0 +1,19 @@
+{
+  "orderSummary": "Order Summary",
+  "mySelectedScreens": "My Selected screens",
+  "nis":"NIS",
+
+}
+
+//ignore: camel_case_types
+//class kStringCart {
+
+//  static const descriptionNis =
+//  "The payment will be proceed after \n screen owner approval";
+//  static const WalletOnis1 = "Use money from my wallet ";
+//  static const WalletOnis2 = "0NIS";
+//  static const addCard = "Add credit card";
+//  static const buttonCheckOut = "Check out";
+//  static const buttonEdit = 'Edit';
+//  static const payWith = "Pay With";
+//}
